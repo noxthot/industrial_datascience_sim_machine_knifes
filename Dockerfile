@@ -8,10 +8,12 @@ RUN --mount=type=cache,target=/root/.cache/uv \
     --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
     uv sync --locked --no-install-project
 
-COPY dist/generate.py /app
+COPY readme.md pyproject.toml uv.lock /app
 
 RUN --mount=type=cache,target=/root/.cache/uv \
     uv sync --locked
+    
+COPY ./dist /app
 
 WORKDIR /app
-CMD ["python", "generate.py"]
+CMD ["uv", "run", "generate.py"]

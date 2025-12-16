@@ -26,7 +26,7 @@ docker build -t data-generator .
 ```
 Then run the container with
 ```bash
-docker run --rm -v $(pwd)/output:/app/output data-generator
+docker run --rm -v $(pwd)/output:/app/data data-generator
 ```
 
 The generated data will be found in the `output` directory.
