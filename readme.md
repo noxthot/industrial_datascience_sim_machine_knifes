@@ -1,4 +1,5 @@
 # Data Generator for Manufacturing Process Simulation
+
 This script generates synthetic data simulating a manufacturing process with three steps.
 Each step has associated sensor readings and a quality label indicating whether the produced item is defective or not.
 The data generation can be influenced by various parameters such as shift type (day/night), processing speed, and pressure applied in each step.
@@ -7,6 +8,9 @@ This simulator is used in the course material found at https://noxthot.github.io
 
 ## Author
 Gregor Ehrensperger -- ehrensperger.dev -- 2025
+
+## Citing
+[![DOI](https://zenodo.org/badge/1117321259.svg)](https://zenodo.org/badge/latestdoi/1117321259)
 
 ## Usage
 - Option A (prerequisite: [uv](https://docs.astral.sh/uv/) installed and trust in the author of the code):
