@@ -1,0 +1,11 @@
+[project]
+name = "simmachine_knifes"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Gregor Ehrensperger", email = "g@ehrensperger.dev"},
+]
+dependencies = ["numpy>=2.3.3", "pandas>=2.3.2", "pyarmor>=9.1.9", "tqdm>=4.67.1"]
+requires-python = "==3.13.*"
+readme = "README.md"
+license = {text = "MIT License"}
