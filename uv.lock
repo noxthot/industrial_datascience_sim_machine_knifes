@@ -86,6 +86,8 @@ version = "8.1.0"
 source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/e1/eb/7127e8bb109dc33bad7a9482fb75ff4c64e91574279e4b4a2eda05bbc8dd/pyarmor_cli_core-8.1.0.tar.gz", hash = "sha256:0a1abb280947b0c67897a1a459f23b2d674ca7b9e3dc2078bd76b53a10bc6955", size = 4496, upload-time = "2025-10-31T10:33:06.097Z" }
 wheels = [
+    { url = "https://files.pythonhosted.org/packages/4b/a0/d398a9472eba1e2360dcd2dddecfdfc367e0a2442ead2ee01357caf44710/pyarmor_cli_core-8.1.0-cp313-cp313-win32.whl", hash = "sha256:b6b0f70ced3ff077cb7232c2bf47b83d6f140bd658a2fd58ad7361d07e9f5912", size = 460518, upload-time = "2025-12-16T09:41:25.646Z" },
+    { url = "https://files.pythonhosted.org/packages/5a/6c/224668639ee3cc0756d58d470feb653d2107c504f8e96e27a1a7958beb26/pyarmor_cli_core-8.1.0-cp313-cp313-win_amd64.whl", hash = "sha256:2ba30e1da2758eedba89e8116dd8c6f1a6e17dd11748874ecb25b7827a4bf709", size = 421141, upload-time = "2025-12-16T09:41:30.938Z" },
     { url = "https://files.pythonhosted.org/packages/53/09/173d69791f300e816cb1e2094a42bbf8c1fbe19ea704e859a5ecbe2826ba/pyarmor_cli_core-8.1.0-cp313-none-macosx_10_14_x86_64.whl", hash = "sha256:b7659a53be26da68bd6e553263113713ccf7523c7bf374e29c269aacfe64ff33", size = 517216, upload-time = "2025-10-31T10:35:55.086Z" },
     { url = "https://files.pythonhosted.org/packages/62/5f/b7d5347cf71dee7643e748ff79df78b8ad517684097b3e58ea72afbafa18/pyarmor_cli_core-8.1.0-cp313-none-macosx_11_0_arm64.whl", hash = "sha256:e89201cc59c256518df1141fe24143f8537b3005dcedeefb5b0fb7f163a7c3fb", size = 409526, upload-time = "2025-10-31T10:35:59.593Z" },
     { url = "https://files.pythonhosted.org/packages/52/80/834b40453eb93194f309b07083407e445a23fb041bf88e56f876e36b0afb/pyarmor_cli_core-8.1.0-cp313-none-manylinux1_i686.whl", hash = "sha256:ec7b666f653e02ca479f502d9c5d8ebe79d481fb692d97ce507fcea3b4cff587", size = 489382, upload-time = "2025-10-31T10:36:04.335Z" },
@@ -122,7 +124,7 @@ wheels = [
 
 [[package]]
 name = "simmachine-knifes"
-version = "0.1.0"
+version = "1.0.0"
 source = { virtual = "." }
 dependencies = [
     { name = "numpy" },
