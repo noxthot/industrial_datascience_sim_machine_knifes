@@ -20,7 +20,7 @@ uv sync
 ```
 to install dependencies and then run the script with
 ```bash
-pdm run python generate.py
+uv run python generate.py
 ```
 
 - Option B (prerequisite: [Docker](https://www.docker.com/)):
