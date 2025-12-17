@@ -20,7 +20,7 @@ uv sync
 ```
 to install dependencies and then run the script with
 ```bash
-uv run python generate.py
+uv run python dist/generate.py
 ```
 
 - Option B (prerequisite: [Docker](https://www.docker.com/)):
@@ -54,7 +54,7 @@ export STEP3_PROCESS_SPEED=20
 export STEP1_PRESSURE=5
 export STEP2_PRESSURE=100
 export STEP3_PRESSURE=20
-pdm run python generate.py
+uv run python dist/generate.py
 ```
 
 or like this in Windows cmd:
@@ -66,12 +66,12 @@ set STEP3_PROCESS_SPEED=20
 set STEP1_PRESSURE=5
 set STEP2_PRESSURE=100
 set STEP3_PRESSURE=20
-pdm run python generate.py
+uv run python dist/generate.py
 ```
 
 For option B, you can set them like this when running the Docker container:
 ```bash
-docker run --rm -e SHIFT=night -e STEP1_PROCESS_SPEED=10 -e STEP2_PROCESS_SPEED=1 -e STEP3_PROCESS_SPEED=20 -e STEP1_PRESSURE=5 -e STEP2_PRESSURE=100 -e STEP3_PRESSURE=20 -v
+docker run --rm -e SHIFT=night -e STEP1_PROCESS_SPEED=10 -e STEP2_PROCESS_SPEED=1 -e STEP3_PROCESS_SPEED=20 -e STEP1_PRESSURE=5 -e STEP2_PRESSURE=100 -e STEP3_PRESSURE=20 -v $(pwd)/output:/app/data data-generator
 ```
 
 The settings above are the default settings.
@@ -79,7 +79,7 @@ The settings above are the default settings.
 In case you want, you can also set the number of pieces to be generated via the environment variable `NUM_PIECES`. The default is `1000`.
 
 ## Output
-The generated data will be stored in the `output` directory and consist of two files describing sensor readings and quality labels for each produced item.
+The generated data will be stored in the `output` (for docker), or `data` (for local runs; be aware that this overwrites the data that was shipped with) directory and consist of two files describing sensor readings and quality labels for each produced item.
 The console output will provide information about the generation process and give a summary of the number or erroneous items produced with the given configuration.
 
 
