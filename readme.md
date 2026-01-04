@@ -69,9 +69,14 @@ set STEP3_PRESSURE=20
 uv run python dist/generate.py
 ```
 
-For option B, you can set them like this when running the Docker container:
+For option B, you can set them like this when running the Docker container in bash:
 ```bash
 docker run --rm -e SHIFT=night -e STEP1_PROCESS_SPEED=10 -e STEP2_PROCESS_SPEED=1 -e STEP3_PROCESS_SPEED=20 -e STEP1_PRESSURE=5 -e STEP2_PRESSURE=100 -e STEP3_PRESSURE=20 -v $(pwd)/output:/app/data data-generator
+```
+
+or cmd:
+```
+docker run --rm -e SHIFT=night -e STEP1_PROCESS_SPEED=10 -e STEP2_PROCESS_SPEED=1 -e STEP3_PROCESS_SPEED=20 -e STEP1_PRESSURE=5 -e STEP2_PRESSURE=100 -e STEP3_PRESSURE=20 -v %cd%/output:/app/data data-generator
 ```
 
 The settings above are the default settings.
