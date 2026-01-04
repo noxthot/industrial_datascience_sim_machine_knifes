@@ -75,7 +75,7 @@ docker run --rm -e SHIFT=night -e STEP1_PROCESS_SPEED=10 -e STEP2_PROCESS_SPEED=
 ```
 
 or cmd:
-```
+```cmd
 docker run --rm -e SHIFT=night -e STEP1_PROCESS_SPEED=10 -e STEP2_PROCESS_SPEED=1 -e STEP3_PROCESS_SPEED=20 -e STEP1_PRESSURE=5 -e STEP2_PRESSURE=100 -e STEP3_PRESSURE=20 -v %cd%/output:/app/data data-generator
 ```
 
