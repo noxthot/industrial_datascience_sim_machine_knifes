@@ -54,7 +54,7 @@ export STEP3_PROCESS_SPEED=20
 export STEP1_PRESSURE=5
 export STEP2_PRESSURE=100
 export STEP3_PRESSURE=20
-uv run python dist/generate.py
+uv run dist/generate.py
 ```
 
 or like this in Windows cmd:
@@ -66,7 +66,7 @@ set STEP3_PROCESS_SPEED=20
 set STEP1_PRESSURE=5
 set STEP2_PRESSURE=100
 set STEP3_PRESSURE=20
-uv run python dist/generate.py
+uv run dist/generate.py
 ```
 
 For option B, you can set them like this when running the Docker container in bash:
