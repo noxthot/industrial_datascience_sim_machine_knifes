@@ -4,10 +4,10 @@ This script generates synthetic data simulating a manufacturing process with thr
 Each step has associated sensor readings and a quality label indicating whether the produced item is defective or not.
 The data generation can be influenced by various parameters such as shift type (day/night), processing speed, and pressure applied in each step.
 
-This simulator is used in the course material found at https://noxthot.github.io/ws25_industrial_datascience_manuscript/, a course about Industrial Data Science.
+This simulator is used in the course material found at https://noxthot.github.io/ws26_industrial_datascience_manuscript/, a course about Industrial Data Science.
 
 ## Author
-Gregor Ehrensperger -- ehrensperger.dev -- 2025
+Gregor Ehrensperger -- ehrensperger.dev -- 2026
 
 ## Citing
 [![DOI](https://zenodo.org/badge/1117321259.svg)](https://zenodo.org/badge/latestdoi/1117321259)
@@ -20,7 +20,7 @@ uv sync
 ```
 to install dependencies and then run the script with
 ```bash
-uv run python dist/generate.py
+uv run dist/generate.py
 ```
 
 - Option B (prerequisite: [Docker](https://www.docker.com/)):

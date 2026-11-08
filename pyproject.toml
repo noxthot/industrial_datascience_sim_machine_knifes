@@ -1,16 +1,21 @@
 [project]
 name = "simmachine_knifes"
-version = "1.0.2"
+version = "1.0.3"
 authors = [
     {name = "Gregor Ehrensperger", email = "g@ehrensperger.dev"},
 ]
-dependencies = ["numpy>=2.3.3", "pandas>=2.3.2", "tqdm>=4.67.1"]
 requires-python = "==3.13.*"
 readme = "README.md"
 license = {text = "MIT License"}
 
+dependencies = [
+    "numpy>=2.3.3",
+    "pandas>=2.3.2",
+    "tqdm>=4.67.1"
+]
+
 [dependency-groups]
-dev = [
+release = [
     "pip>=25.3",
     "pyarmor>=9.2.2",
 ]
